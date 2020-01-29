@@ -1,2 +1,2 @@
 #!/bin/bash
-echo `ls -mav -1` $'\n'
+echo `ls -mavp` $'\n'
