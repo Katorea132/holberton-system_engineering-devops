@@ -1,1 +1,3 @@
 #!/usr/bin/env bash
+#This is a script to print 10 times Holberton School
+for _ in $(seq 1 10); do echo "Holberton School"; done
