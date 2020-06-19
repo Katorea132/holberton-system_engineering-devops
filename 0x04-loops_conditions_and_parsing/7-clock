@@ -1,1 +1,11 @@
 #!/usr/bin/env bash
+#DIspalys hours and minutes
+while((i++ < 12))
+do
+	echo "Hour: $i"
+	while((j++ < 59))
+	do
+		echo "$j"
+	done
+	j=0
+done
