@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 #LS with basename
-lili=$(ls); for name in $lili; do echo "${name%.*}"; done
+lili=$(ls); for name in $lili; do echo "$lili" | cut -d "-" -f 2; done
