@@ -1,6 +1,3 @@
 #!/usr/bin/env bash
 #Read and cut
-while read -r lili
-do
-	echo "$lili" | cut -d ":" -f1,3,6
-done < "/etc/passwd"
+while read -r lili; do echo "$lili" | cut -d ":" -f1,3,6; done < "/etc/passwd"
