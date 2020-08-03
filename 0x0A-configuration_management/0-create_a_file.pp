@@ -1,3 +1,4 @@
+#COmments...
 file { '/tmp/holberton':
   ensure  => 'file',
   content => 'I love Puppet',
