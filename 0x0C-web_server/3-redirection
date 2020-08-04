@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#COnfig redirect
+
+apt -y update
+apt -y install nginx
+echo "Holberton School" > /var/www/html/index.nginx-devian.html
+sed -i '/server_name _;/ a rewrite ^/redirect_me https://www.reddit.com permanent;' /etc/nginx/sites-available/default
+service nginx start
