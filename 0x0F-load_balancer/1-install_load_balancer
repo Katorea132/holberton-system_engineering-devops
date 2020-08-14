@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#Instal and config haproxy
+apt update
+apt install software-properties-common
+apt install haproxy
+echo "frontend load_balancer
+	bind *:80
+	mode http
+	default_backend lilium
+
+backend lilium
+	balance roundrobin
+	server lilium1 34.75.178.156
+	server lilium2 35.231.231.185
+" >> /etc/haproxy/haproxy.cfg
+service haproxy start
