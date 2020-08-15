@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #Instal and config haproxy
-apt update
-apt install software-properties-common
-apt install haproxy
+apt -y update
+apt -y install software-properties-common
+apt -y install haproxy
 echo "frontend load_balancer
 	bind *:80
 	mode http
