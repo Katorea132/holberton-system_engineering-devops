@@ -9,4 +9,4 @@ function rlly {
 		dig "$sub.$1" | awk -v domi="$sub" '/ANSWER SECTION:/ { getline; print "The subdomain", domi, "is a", $4, "record and points to", $5}'
 	done
 }
-rlly "$1"
+rlly $1
