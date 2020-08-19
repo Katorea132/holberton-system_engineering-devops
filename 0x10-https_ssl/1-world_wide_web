@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Information about subdomains
+
+dom=$1
+
+if [ $# -eq 1 ]; then subdom=("www" "lb-01" "web-01" "web-02"); else subdom=$2; fi
+
+for sub in "${subdom[@]}";
+do
+	dig "$sub.$dom" | awk -v domi=$sub '/ANSWER SECTION:/ {getline; print "The subdomain", domi, "is a", $4, "record and points to", $5}'
+done
