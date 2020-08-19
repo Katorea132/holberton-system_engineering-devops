@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Information about subdomains
 
-if [ $# -eq 2 ]; then subdom=("$2"); else subdom=("www" "lb-01" "web-01" "web-02"); fi
+if [ $# -eq 1 ]; then subdom=("www" "lb-01" "web-01" "web-02"); else subdom=("$2"); fi
 
 function rlly {
 	for sub in "${subdom[@]}";
