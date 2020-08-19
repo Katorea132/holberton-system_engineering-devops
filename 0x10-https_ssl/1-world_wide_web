@@ -3,7 +3,11 @@
 
 domain=$1
 
-if [ $# -eq 1 ]; then subdomain=("www" "lb-01" "web-01" "web-02"); else subdomain=("$2"); fi
+if [ $# -eq 1 ]; then 
+	subdomain=("www" "lb-01" "web-01" "web-02"); 
+else 
+	subdomain=("$2"); 
+fi
 
 for sub in "${subdomain[@]}";
 do
