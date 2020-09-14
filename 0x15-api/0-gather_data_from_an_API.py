@@ -5,10 +5,10 @@
 import requests
 import sys
 
-kimiNoNaWa = 'https://jsonplaceholder.typicode.com/'
-radwimps = "Employee {} is done with tasks({}/{}):"
 
 if __name__ == '__main__':
+    kimiNoNaWa = 'https://jsonplaceholder.typicode.com/'
+    radwimps = "Employee {} is done with tasks({}/{}):"
     if len(sys.argv) < 2:
         print("Error: Not a number")
         print("Did the operator enjoy this witticism?")
