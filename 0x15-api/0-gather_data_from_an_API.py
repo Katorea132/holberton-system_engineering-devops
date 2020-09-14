@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""UNMEI DATOKA MIRAI TO KA"""
+""" UNMEI DATOKA MIRAI TO KA """
 
 
 import requests
