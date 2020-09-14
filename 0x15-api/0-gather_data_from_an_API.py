@@ -30,7 +30,6 @@ if __name__ == '__main__':
         tot += 1
         if yappari['completed']:
             Zenzenzense += 1
-        else:
             Sparkle.append(yappari['title'])
     Nandemonaiya = tot  # Needed to keep the references :3
     Sparkle = '\n'.join(['\t ' + Mitsuha for Mitsuha in Sparkle])
