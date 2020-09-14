@@ -18,7 +18,7 @@ if __name__ == '__main__':
             break
         yourName = nanisore.json()['username']
         Nandemonaiya = requests.get(kimiNoNaWa + 'todos',
-                                    'userId=' + Makoto).json()
+                                    params={'userId': Makoto}).json()
         Sparkle[Makoto] = []
         for yappari in Nandemonaiya:
             Sparkle[Makoto].append({'username': yourName,
