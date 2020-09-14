@@ -22,7 +22,7 @@ if __name__ == '__main__':
         exit(1)
     yourName = nanisore.json()['username']
     Nandemonaiya = requests.get(kimiNoNaWa + 'todos',
-                                'userId=' + Makoto).json()
+                                params={'userId': Makoto}).json()
     with open(Makoto + '.json', 'w') as Zenzenzense:
         Sparkle = {Makoto: []}
         for yappari in Nandemonaiya:
