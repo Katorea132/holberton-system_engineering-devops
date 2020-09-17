@@ -8,7 +8,7 @@ def number_of_subscribers(subreddit):
     """Returns amount of subscribers
 
     Args:
-        subreddit (string): Subreddit name 
+        subreddit (string): Subreddit name
 
     Returns:
         int: Amount of subscribers
